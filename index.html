@@ -1,7 +1,9 @@
 <html>
 
 <head>
-	<title>Controladoeres</title>
+	<title>ListTask</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="listTask.css">
 
@@ -27,7 +29,7 @@
 			</li>
 		</ul>
 		<form>
-			<input type="texto" size="30" placeholder="Agregar un nuevo pendiente" ng-model="ctrl.textoNuevaTarea">
+			<input type="texto" size="30" placeholder="Agregar una tarea pendiente" ng-model="ctrl.textoNuevaTarea">
 			<button class="btn btn-primary" type="submit" ng-click="ctrl.agregarTarea()">Agregar</button>
 		</form>
 	</div>
