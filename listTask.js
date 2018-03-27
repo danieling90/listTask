@@ -35,6 +35,7 @@ angular.module('todoAp', ['firebase'])
     ctrl.toDo = function (task) {
       var index = ctrl.tareas.$indexFor(task.$id);
       ctrl.tareas.$save(index);
+      //daniel
     }
 
     ctrl.tareasRealizadas = function () {
