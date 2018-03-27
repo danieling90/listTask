@@ -27,10 +27,15 @@ angular.module('todoAp', ['firebase'])
     ctrl.restantes = function () {
       var cuenta = 0;
       angular.forEach(ctrl.tareas, function (tarea) {
-          cuenta++;
+        cuenta++;
       })
       return cuenta;
     };
+
+    ctrl.toDo = function (task) {
+      var index = ctrl.tareas.$indexFor(task.$id);
+      ctrl.tareas.$save(index);
+    }
 
     ctrl.tareasRealizadas = function () {
       var cuenta = 0;
